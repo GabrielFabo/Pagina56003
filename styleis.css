@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: arial;
+    background-image: url('bg.png');
+  }
+    
+  .controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+
+
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffff;
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+
+/* Navegation Menu */
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #c90707;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:9999;
+}
+.btn-menu{display: none;}
+.menu .logobox{margin-left: 30px;}
+.menu .logobox h1 > a{
+    text-decoration: none;
+    color:#700000;
+    font-size: 30px;
+    font-weight: 400;
+}
+.menu .logobox h1 > a > i{color:#f8b30e; margin-right: 10px;}
+.menu .list-container{margin-right: 30px;}
+.menu .list-container .lists{display: flex;}
+.menu .list-container .lists li{list-style: none;}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color:#000000;
+    font-size: 19px;
+    margin:0px 7px;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 300ms;
+}
+.menu .list-container .lists li a:hover{color:#f8b30e;}
+.menu .list-container .lists li a.active{color:#f8b30e;}
+/* Barra de menú fija */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f7e9e9;
+    z-index: 100;
+}
+
+.menu.sticky {
+    position: fixed;
+}
+
+/* Ajuste del contenido al desplazarse */
+.main-content {
+    margin-top: 100px; /* Ajusta el valor según el tamaño de la barra de menú */
+}
+
+/* Estilo del enlace activo en la barra de menú */
+.lists li a.active {
+    color: #e8dbdc;
+    font-weight: bold;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: #f4e2e2;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .content {
+    display: none;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .floating-icons a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  .whatsapp-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #25D366;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    }
+  .whatsapp-icon {
+    background-color: #25d366;
+    color: #fff;
+  }
+  .facebook-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+  .facebook-icon {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  
+  .whatsapp-icon:hover {
+    background-color: #128C7E;
+    
+  }
+  
+  
+  
+  .facebook-icon:hover {
+    background-color: #2d4373;
+    
+  }
+  
+  
+  
+
+/* Img Header */
+
+.img-header {
+    position: left;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.img-header img {
+    max-width:170%;
+    height: 700px;
+    display: block;
+    margin: auto;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(132, 128, 128);
+    text-align: center;
+}
+
+.welcome h4 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* About Us */
+
+.about-us {
+    padding: 60px;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.info h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.free-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.free-content h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.icons > div {
+    flex: 0 0 33.33%;
+}
+
+.span-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5a5f;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.span-icon span {
+    color: #fff;
+    font-size: 32px;
+}
+
+.icons h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.icons p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+}
+/* Ciencia y Tecnología */
+.ciencia-tegnologia {
+    background-color: #f5f5f5;
+    padding: 60px;
+    text-align: center;
+}
+
+.ciencia-tegnologia h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Estilo base para el enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interior (arriba/abajo, izquierda/derecha) */
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #12151f; /* Color del texto */
+    text-decoration: none; /* Elimina la subrayado predeterminado */
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el ratón */
+  }
+  
+  /* Estilo cuando el ratón pasa sobre el enlace */
+  .documento-enlace:hover {
+    background-color: #0056b3; /* Cambia el color de fondo en el hover */
+    color: #fff; /* Cambia el color del texto en el hover */
+  }
+  /* Estilo base para el contenedor del enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* Estilo para la imagen de portada del documento */
+  .documento-enlace img {
+    max-width: 300px; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+  }
+  
+  /* Estilo para el texto del enlace */
+  .documento-enlace span {
+    margin-top: 5px; /* Agrega un pequeño espacio entre la imagen y el texto */
+    display: block; /* Coloca el texto debajo de la imagen */
+    text-align: center; /* Centra el texto */
+  }
+  
+
+/* Personal Social */
+.personal-social {
+    background-color: #f0f0f0;
+    padding: 60px;
+    text-align: center;
+}
+
+.personal-social h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Estilo base para el enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interior (arriba/abajo, izquierda/derecha) */
+    background-color: #0f93ff; /* Color de fondo del botón */
+    color: #12151f; /* Color del texto */
+    text-decoration: none; /* Elimina la subrayado predeterminado */
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el ratón */
+  }
+  
+  /* Estilo cuando el ratón pasa sobre el enlace */
+  .documento-enlace:hover {
+    background-color: #dc0f0f; /* Cambia el color de fondo en el hover */
+    color: #fff; /* Cambia el color del texto en el hover */
+  }
+  /* Estilo base para el contenedor del enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* Estilo para la imagen de portada del documento */
+  .documento-enlace img {
+    max-width: 300px; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+  }
+  
+  /* Estilo para el texto del enlace */
+  .documento-enlace span {
+    margin-top: 5px; /* Agrega un pequeño espacio entre la imagen y el texto */
+    display: block; /* Coloca el texto debajo de la imagen */
+    text-align: center; /* Centra el texto */
+  }
+/* Material complementario */
+.sesiones-aprendizaje {
+    background-color: #ebebeb;
+    padding: 60px;
+    text-align: center;
+}
+
+.sesiones-aprendizaje h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Matemática */
+.matematicas {
+    background-color: #ebebeb;
+    padding: 60px;
+    text-align: center;
+}
+.matematicas h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Estilo base para el enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interior (arriba/abajo, izquierda/derecha) */
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #12151f; /* Color del texto */
+    text-decoration: none; /* Elimina la subrayado predeterminado */
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el ratón */
+  }
+  
+  /* Estilo cuando el ratón pasa sobre el enlace */
+  .documento-enlace:hover {
+    background-color: #0056b3; /* Cambia el color de fondo en el hover */
+    color: #fff; /* Cambia el color del texto en el hover */
+  }
+  /* Estilo base para el contenedor del enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* Estilo para la imagen de portada del documento */
+  .documento-enlace img {
+    max-width: 300px; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+  }
+  
+  /* Estilo para el texto del enlace */
+  .documento-enlace span {
+    margin-top: 5px; /* Agrega un pequeño espacio entre la imagen y el texto */
+    display: block; /* Coloca el texto debajo de la imagen */
+    text-align: center; /* Centra el texto */
+  }
+  
+/* Comunicación */
+.comunicacion {
+    background-color: #ebebeb;
+    padding: 60px;
+    text-align: center;
+}
+.comunicacion h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Estilo base para el enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interior (arriba/abajo, izquierda/derecha) */
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #12151f; /* Color del texto */
+    text-decoration: none; /* Elimina la subrayado predeterminado */
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el ratón */
+  }
+  
+  /* Estilo cuando el ratón pasa sobre el enlace */
+  .documento-enlace:hover {
+    background-color: #0056b3; /* Cambia el color de fondo en el hover */
+    color: #fff; /* Cambia el color del texto en el hover */
+  }
+  /* Estilo base para el contenedor del enlace a documento */
+.documento-enlace {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* Estilo para la imagen de portada del documento */
+  .documento-enlace img {
+    max-width: 300px; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+  }
+  
+  /* Estilo para el texto del enlace */
+  .documento-enlace span {
+    margin-top: 5px; /* Agrega un pequeño espacio entre la imagen y el texto */
+    display: block; /* Coloca el texto debajo de la imagen */
+    text-align: center; /* Centra el texto */
+  }
+  
+/* Gallery */
+
+.gallery-section {
+    background-color: #f2f2f2;
+    padding: 60px;
+    text-align: center;
+}
+
+.animal-icon {
+    margin-bottom: 60px;
+}
+
+.animal-icon i {
+    font-size: 120px;
+    color: #333;
+}
+
+/* Estilos para el carrusel de imágenes */
+.carousel {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    display: none;
+    transition: opacity 0.6s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Estilos para los indicadores del carrusel (puntos) */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border: 1px solid #333;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #333;
+  }
+  
+  /* Estilos para los controles del carrusel (flechas) */
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev {
+    left: 15px;
+  }
+  
+  .carousel-control-next {
+    right: 15px;
+  }
+  
+  /* Personaliza otros estilos según tus necesidades */
+  
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
